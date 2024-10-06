@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'matemasie': ['Matemasie', 'sans-serif'],
+        'paytone': ['Paytone One', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
