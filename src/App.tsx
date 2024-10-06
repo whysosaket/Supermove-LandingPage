@@ -2,6 +2,8 @@ import Background from "./components/Background"
 import Navbar from "./components/Navbar"
 import Intro from "./components/Intro";
 import Spheron from "./components/shared/Spheron";
+import Monkey from "./components/shared/Monkey";
+import Background2 from "./components/Background2";
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
       <Navbar />
       <Background />
       <Intro />
-      <Spheron />
+      {/* <Monkey /> */}
+      {/* <Background2 /> */}
+      {/* <Spheron /> */}
       {/* <div className="flex justify-center items-center h-screen">
         <img src={logo} alt="logo" className="w-44" />
       </div>

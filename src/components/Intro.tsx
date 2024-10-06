@@ -5,6 +5,7 @@ const Intro = () => {
       initial={{ y: 0 }}
       animate={{ y: -100 }}
       transition={{ duration: 0.4, delay: 3.5 }}
+      className="z-[100]"
     >
       <motion.div
         initial={{ scale: 1.2 }}

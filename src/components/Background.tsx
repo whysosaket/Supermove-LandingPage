@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import bg2 from "../assets/abstract/2.png";
 import bg3 from "../assets/abstract/3.png";
 import layer from "../assets/bg.png";
+import wall from "../assets/wall.jpg";
+import { Vortex } from "./ui/vortex";
 
 const floatVariantsBg2 = {
   initial: { y: 0, x: 0 },
@@ -32,32 +34,43 @@ const floatVariantsBg3 = {
 const Background = () => {
   return (
     <div className="absolute w-full h-screen overflow-hidden">
-      <motion.img
-        src={bg2}
-        alt="bg2"
-        className="w-[40rem] absolute -bottom-[4rem] left-[-15rem]"
-        variants={floatVariantsBg2}
-        initial="initial"
-        animate="animate"
-      />
-
-      <motion.img
-        src={bg3}
-        alt="bg3"
-        className="w-[40rem] absolute top-[4rem] right-[-15rem]"
-        variants={floatVariantsBg3}
-        initial="initial"
-        animate="animate"
-      />
-
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
-        transition={{ duration: 3.5 }}
-        src={layer}
-        alt="layer"
-        className="absolute w-full opacity-20 bottom-[0rem] left-[0rem] -z-10"
-      />
+      <Vortex
+        backgroundColor="transparent"
+        rangeY={800}
+        particleCount={50}
+        baseHue={20}
+        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-0"
+      >
+        <img 
+          src={wall} 
+          alt="wall" 
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-20" 
+        />
+        <motion.img
+          src={bg2}
+          alt="bg2"
+          className="w-[40rem] absolute -bottom-[4rem] left-[-15rem]"
+          variants={floatVariantsBg2}
+          initial="initial"
+          animate="animate"
+        />
+        <motion.img
+          src={bg3}
+          alt="bg3"
+          className="w-[40rem] absolute top-[4rem] right-[-15rem]"
+          variants={floatVariantsBg3}
+          initial="initial"
+          animate="animate"
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.2 }}
+          transition={{ duration: 3.5 }}
+          src={layer}
+          alt="layer"
+          className="absolute w-full opacity-20 bottom-[0rem] left-[0rem] -z-5"
+        />
+      </Vortex>
     </div>
   );
 };
