@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import bg2 from "../assets/abstract/2.png";
 import bg3 from "../assets/abstract/3.png";
 import layer from "../assets/bg.png";
-import wall from "../assets/wall.jpg";
+import wall from "../assets/wall3.jpg";
 import { Vortex } from "./ui/vortex";
 
 const floatVariantsBg2 = {
@@ -44,7 +44,7 @@ const Background = () => {
         <img 
           src={wall} 
           alt="wall" 
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-20" 
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-50" 
         />
         <motion.img
           src={bg2}
