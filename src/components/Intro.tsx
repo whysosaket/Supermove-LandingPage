@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import CTA from "./shared/cta";
 const Intro = () => {
   return (
     <motion.div
@@ -45,6 +46,9 @@ const Intro = () => {
           </motion.h1>
         </AnimatePresence>
       </motion.div>
+      <div className="flex justify-center items-center">
+        <CTA />
+      </div>
     </motion.div>
   );
 };

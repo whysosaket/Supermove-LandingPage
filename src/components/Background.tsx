@@ -11,7 +11,7 @@ const floatVariantsBg2 = {
     y: [0, -30, 0],
     x: [0, 15, 0],
     transition: {
-      duration: 8,
+      duration: 6,
       repeat: Infinity,
       ease: "easeInOut",
     },
@@ -24,7 +24,7 @@ const floatVariantsBg3 = {
     y: [0, 25, 0],
     x: [0, -20, 0],
     transition: {
-      duration: 5,
+      duration: 8,
       repeat: Infinity,
       ease: "easeInOut",
     },
@@ -49,7 +49,7 @@ const Background = () => {
         <motion.img
           src={bg2}
           alt="bg2"
-          className="w-[40rem] absolute -bottom-[4rem] left-[-15rem]"
+          className="w-[40rem] absolute -bottom-[4rem] left-[-15rem] brightness-90"
           variants={floatVariantsBg2}
           initial="initial"
           animate="animate"
@@ -57,7 +57,7 @@ const Background = () => {
         <motion.img
           src={bg3}
           alt="bg3"
-          className="w-[40rem] absolute top-[4rem] right-[-15rem]"
+          className="w-[40rem] absolute top-[0rem] right-[-15rem] brightness-90"
           variants={floatVariantsBg3}
           initial="initial"
           animate="animate"
