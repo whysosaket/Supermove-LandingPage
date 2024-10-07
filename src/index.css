@@ -15,6 +15,11 @@ body{
   .font-outline-4 {
     -webkit-text-stroke: 4px white;
   }
+
+  .font-outline-dark-2 {
+    -webkit-text-stroke: 2px black;
+  }
+
 }
 
 html {
@@ -28,4 +33,14 @@ html {
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #1a1a1a;
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
 }
