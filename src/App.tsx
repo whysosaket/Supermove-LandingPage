@@ -6,6 +6,7 @@ import Monkey from "./components/shared/Monkey";
 import Background2 from "./components/Background2";
 import About from "./components/about/About";
 import Work from "./components/work/work";
+import Timeline from "./components/timeline/timeline";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Intro />
       <About />
       <Work />
+      <Timeline />
       {/* <Monkey /> */}
       {/* <Background2 /> */}
       {/* <Spheron /> */}
