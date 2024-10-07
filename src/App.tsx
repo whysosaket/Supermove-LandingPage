@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Spheron from "./components/shared/Spheron";
 import Monkey from "./components/shared/Monkey";
 import Background2 from "./components/Background2";
+import About from "./components/about/About";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Background />
       <Intro />
+      <About />
       {/* <Monkey /> */}
       {/* <Background2 /> */}
       {/* <Spheron /> */}
