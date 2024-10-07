@@ -3,10 +3,11 @@ import Navbar from "./components/Navbar"
 import Intro from "./components/Intro";
 import Spheron from "./components/shared/Spheron";
 import Monkey from "./components/shared/Monkey";
-import Background2 from "./components/Background2";
+
 import About from "./components/about/About";
 import Work from "./components/work/work";
 import Timeline from "./components/timeline/timeline";
+import Footer from "./components/footer/footer";
 
 function App() {
 
@@ -18,8 +19,8 @@ function App() {
       <About />
       <Work />
       <Timeline />
+      <Footer />
       {/* <Monkey /> */}
-      {/* <Background2 /> */}
       {/* <Spheron /> */}
       {/* <div className="flex justify-center items-center h-screen">
         <img src={logo} alt="logo" className="w-44" />

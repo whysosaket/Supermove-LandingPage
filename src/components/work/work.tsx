@@ -20,7 +20,7 @@ const floatVariantsBg2 = {
 
 const Work = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0.66, 1.5], ["-60vw", "0vw"]);
+  const x = useTransform(scrollYProgress, [0.4, 1.5], ["-100vw", "0vw"]);
   return (
     <div className="absolute top-[200vh] w-full h-screen overflow-hidden px-8">
       <img

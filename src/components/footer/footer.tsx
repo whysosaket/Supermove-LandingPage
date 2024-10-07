@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import bg2 from "../assets/shapes/1.png";
-import bg3 from "../assets/shapes/2.png";
-import layer from "../assets/bg2.png";
-import { Vortex } from "./ui/vortex";
-import Monkey from "./shared/Monkey";
+import bg2 from "../../assets/abstract/1.png";
+import bg3 from "../../assets/abstract/2.png";
+import layer from "../../assets/bg2.png";
+import Monkey from "../shared/Monkey";
+import wall from "../../assets/wall3.jpg";
+import FooterItem from "./footer-item";
 
 const floatVariantsBg2 = {
   initial: { y: 0, x: 0 },
@@ -31,16 +32,18 @@ const floatVariantsBg3 = {
   },
 };
 
-const Background2 = () => {
+const Footer = () => {
   return (
-    <div className="absolute w-full h-screen overflow-hidden">
-      <Vortex
-        backgroundColor="transparent"
-        rangeY={800}
-        particleCount={50}
-        baseHue={220}
-        className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-      >
+    <div className="absolute top-[400vh] w-full h-screen overflow-hidden">
+         <div className="flex z-10">
+        <FooterItem />
+      </div>
+      <img
+        src={wall}
+        alt="wall"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-20 brightness-[0.5] opacity-50"
+      />
+
       <motion.img
         src={bg2}
         alt="bg2"
@@ -68,9 +71,9 @@ const Background2 = () => {
         alt="layer"
         className="absolute -180 w-full opacity-20 -top-[2rem] left-[0rem] -z-10"
       />
-      </Vortex>
+
     </div>
   );
 };
 
-export default Background2;
+export default Footer;
