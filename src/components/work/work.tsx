@@ -36,13 +36,10 @@ const Work = () => {
           our work
         </motion.h1>
       </div>
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
-        transition={{ duration: 3.5 }}
+      <img
         src={layer}
         alt="layer"
-        className="absolute w-full -top-[2rem] left-[0rem] -z-10 opacity-30"
+        className="absolute w-full -top-[2rem] left-[0rem] -z-10 opacity-10"
       />
       <div className="w-screen h-screen flex justify-center items-center">
         <div className="w-2/5 h-full">
