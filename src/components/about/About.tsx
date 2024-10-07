@@ -4,7 +4,7 @@ import image from "../../assets/space/1_3D.png";
 import AboutUsText from "./AboutUsText";
 import { TabsDemo } from "./about-tabs";
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from "framer-motion";
 import Socials from "./socials";
 
 const floatVariantsBg2 = {
@@ -22,7 +22,7 @@ const floatVariantsBg2 = {
 
 const About = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], ['100vw', '0vw']);
+  const x = useTransform(scrollYProgress, [0, 0.8], ["100vw", "0vw"]);
 
   return (
     <div className="absolute w-full h-screen overflow-hidden px-8">
@@ -32,13 +32,13 @@ const About = () => {
         className="absolute top-0 left-0 w-full h-full object-cover -z-20 brightness-[0.5] opacity-50"
       />
       <div className="w-full overflow-hidden select-none">
-      <motion.h1
-        className="absolute -bottom-20 text-[25rem] font-outline text-white opacity-10 font-paytone whitespace-nowrap"
-        style={{ x }}
-      >
-        about us
-      </motion.h1>
-    </div>
+        <motion.h1
+          className="absolute -bottom-20 text-[25rem] font-outline text-white opacity-10 font-paytone whitespace-nowrap"
+          style={{ x }}
+        >
+          about us
+        </motion.h1>
+      </div>
 
       <motion.img
         initial={{ opacity: 0 }}
@@ -46,8 +46,9 @@ const About = () => {
         transition={{ duration: 3.5 }}
         src={layer}
         alt="layer"
-        className="absolute w-full opacity-30 -top-[2rem] left-[0rem] -z-10"
+        className="absolute w-full -top-[2rem] left-[0rem] -z-10 opacity-30"
       />
+
       <div>
         <div className="flex justify-center items-center h-screen">
           <div className="flex flex-col justify-center w-1/2">
@@ -62,7 +63,7 @@ const About = () => {
           </div>
           <div className="w-1/2">
             <h1 className="absolute top-0 right-8 font-paytone font-outline-2 text-white/0 text-9xl">
-              01
+              0.1
             </h1>
             <motion.img
               variants={floatVariantsBg2}

@@ -5,6 +5,7 @@ import Spheron from "./components/shared/Spheron";
 import Monkey from "./components/shared/Monkey";
 import Background2 from "./components/Background2";
 import About from "./components/about/About";
+import Work from "./components/work/work";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Background />
       <Intro />
       <About />
+      <Work />
       {/* <Monkey /> */}
       {/* <Background2 /> */}
       {/* <Spheron /> */}
