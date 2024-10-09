@@ -18,15 +18,6 @@ function App() {
       <Work />
       <Timeline />
       <Footer />
-      {/* <Monkey /> */}
-      {/* <Spheron /> */}
-      {/* <div className="flex justify-center items-center h-screen">
-        <img src={logo} alt="logo" className="w-44" />
-      </div>
-
-      <div className="flex justify-center items-center h-screen">
-        <img src={aptos} alt="aptos" className="w-44" />
-      </div> */}
     </div>
   )
 }
