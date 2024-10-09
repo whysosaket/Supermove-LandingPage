@@ -43,20 +43,20 @@ const What = () => {
     <div className="relative">
       {/* Background Text */}
       <div className="opacity-100 select-none group-hover:opacity-5 transition-opacity duration-300">
-        <h1 className="text-[3.5rem] font-outline-dark-2 text-black/100 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[3.5rem] font-outline-dark-2 text-black/100 font-paytone">
           what is supermove?
         </h1>
-        <h1 className="text-[3.5rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[3.5rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           what is supermove?
         </h1>
-        <h1 className="text-[3.5rem] -mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[3.5rem] -mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           what is supermove?
         </h1>
       </div>
 
       {/* Hidden Paragraphs that appear on hover */}
-      <div className="text-black -mt-[5.5rem] text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="mb-4">
+      <div className="text-black -mt-[12rem] md:-mt-[5.5rem] text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p className="mb-4 text-xs md:text-sm">
           Spheron SuperMove Tour is a 6 month long developer adoption campaign
           being lead by Spheron and Aptos. Spheron SuperMove Tour aims at
           uniting the open-source developer community here in India 🇮🇳 for
@@ -76,20 +76,20 @@ const Why = () => {
     <div className="relative">
       {/* Background Text */}
       <div className="opacity-100 select-none group-hover:opacity-5 transition-opacity duration-300">
-        <h1 className="text-[4rem] font-outline-dark-2 text-black/100 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[4rem] font-outline-dark-2 text-black/100 font-paytone">
           why supermove?
         </h1>
-        <h1 className="text-[4rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[4rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           why supermove?
         </h1>
-        <h1 className="text-[4rem] -mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[4rem] -mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           why supermove?
         </h1>
       </div>
 
       {/* Hidden Paragraphs that appear on hover */}
-      <div className="text-black -mt-[5.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="mb-4">
+      <div className="text-black -mt-[12rem] md:-mt-[5.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p className="mb-4 text-sm md:text-xl">
           The Indian web3 developer ecosystem faces several challenges:
           fragmented education, stagnant communication, and lack of awareness.
         </p>
@@ -103,20 +103,20 @@ const Who = () => {
     <div className="relative">
       {/* Background Text */}
       <div className="opacity-100 select-none group-hover:opacity-5 transition-opacity duration-300">
-        <h1 className="text-[5rem] font-outline-dark-2 text-black/100 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[5rem] font-outline-dark-2 text-black/100 font-paytone">
           who are we?
         </h1>
-        <h1 className="text-[5rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[5rem] mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           who are we?
         </h1>
-        <h1 className="text-[5rem] -mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
+        <h1 className="text-[2.5rem] md:text-[5rem] -mt-[6.5rem] md:-mt-[5.5rem] font-outline-dark-2 text-white/0 font-paytone">
           who are we?
         </h1>
       </div>
 
       {/* Hidden Paragraphs that appear on hover */}
       <div className="text-black -mt-[5.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="mb-4">
+        <p className="mb-4 text-sm md:text-xl">
           We are developers, aspiring blockchain
           builders, and open-source enthusiasts eager to dive into the world of
           blockchain.

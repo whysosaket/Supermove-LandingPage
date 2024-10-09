@@ -1,8 +1,6 @@
 import Background from "./components/Background"
 import Navbar from "./components/Navbar"
 import Intro from "./components/Intro";
-import Spheron from "./components/shared/Spheron";
-import Monkey from "./components/shared/Monkey";
 
 import About from "./components/about/About";
 import Work from "./components/work/work";

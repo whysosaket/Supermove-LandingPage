@@ -6,7 +6,7 @@ const Intro = () => {
       initial={{ y: 0 }}
       animate={{ y: -100 }}
       transition={{ duration: 0.4, delay: 3.5 }}
-      className="z-[100]"
+      className="z-[100] select-none"
     >
       <motion.div
         initial={{ scale: 1.2 }}
@@ -20,7 +20,7 @@ const Intro = () => {
           initial={{ opacity: 0, y: 100, scale: 7.5 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-[8rem] font-outline-2 font-paytone"
+          className="text-[4rem] md:text-[8rem] font-outline-2 font-paytone"
         >
           supermove
         </motion.h1>
@@ -29,7 +29,7 @@ const Intro = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.9 }}
-            className="text-[8rem] -mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            className="text-[4rem] md:text-[8rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
           >
             supermove
           </motion.h1>
@@ -40,7 +40,7 @@ const Intro = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.3 }}
-            className="text-[8rem] -mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            className="text-[4rem] md:text-[8rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
           >
             supermove
           </motion.h1>

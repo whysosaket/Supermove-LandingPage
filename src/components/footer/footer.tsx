@@ -34,7 +34,7 @@ const floatVariantsBg3 = {
 
 const Footer = () => {
   return (
-    <div className="absolute top-[400vh] w-full h-screen overflow-hidden">
+    <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-hidden">
          <div className="flex z-10">
         <FooterItem />
       </div>

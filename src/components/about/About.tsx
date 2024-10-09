@@ -33,7 +33,7 @@ const About = () => {
       />
       <div className="w-full overflow-hidden select-none">
         <motion.h1
-          className="absolute -bottom-20 text-[25rem] font-outline text-white opacity-10 font-paytone whitespace-nowrap"
+          className="absolute -bottom-20 text-[15rem] md:text-[25rem] font-outline text-white opacity-10 font-paytone whitespace-nowrap"
           style={{ x }}
         >
           about us
@@ -47,19 +47,21 @@ const About = () => {
       />
 
       <div>
-        <div className="flex justify-center items-center h-screen">
-          <div className="flex flex-col justify-center w-1/2">
+        <div className="md:flex justify-center items-center h-screen">
+          <div className="flex flex-col justify-center md:w-1/2">
             <div className="flex w-full gap-4">
-              <AboutUsText />
-              <div className="border-b-2 border-white/100 w-64"></div>
+              <div className="mx-auto mt-8">
+                <AboutUsText />
+              </div>
+              <div className="hidden md:block border-b-2 border-white/100 w-64"></div>
             </div>
             <TabsDemo />
-            <div>
+            <div className="w-full flex md:block justify-center items-center">
               <Socials />
             </div>
           </div>
-          <div className="w-1/2">
-            <h1 className="absolute top-0 right-8 font-paytone font-outline-2 text-white/0 text-9xl">
+          <div className="md:w-1/2">
+            <h1 className="absolute top-4 md:top-0 right-8 font-paytone font-outline-2 text-white/0 text-5xl md:text-9xl">
               0.1
             </h1>
             <motion.img
@@ -68,7 +70,7 @@ const About = () => {
               animate="animate"
               src={image}
               alt="image"
-              className="w-5/6 mx-auto"
+              className="w-5/6 mx-auto -mt-24"
             />
           </div>
         </div>
