@@ -19,10 +19,12 @@ const Timeline = () => {
       <div className="w-screen h-screen flex justify-start">
         <div className="flex flex-col h-screen justify-start">
           <div className="flex w-full h-screen gap-4 md:-rotate-90 justify-center">
+            <div className="flex justify-center mx-auto">
             <TimelineText />
+            </div>
           </div>
         </div>
-        <div className="flex justify-center -ml-[100vw] md:-ml-96">
+        <div className="flex justify-center mt-12 -ml-[100vw] md:-ml-96">
           <div className="md:w-5/6 mx-auto flex justify-center">
             <img
               src={TimelineImage}

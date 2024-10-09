@@ -33,7 +33,7 @@ const floatVariantsBg3 = {
 
 const Background = () => {
   return (
-    <div className="absolute w-full h-screen overflow-hidden">
+    <div className="absolute w-full h-screen overflow-visible md:overflow-hidden">
       <Vortex
         backgroundColor="transparent"
         rangeY={800}

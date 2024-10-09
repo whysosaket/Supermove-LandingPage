@@ -25,7 +25,7 @@ const About = () => {
   const x = useTransform(scrollYProgress, [0, 0.8], ["100vw", "0vw"]);
 
   return (
-    <div className="absolute w-full h-screen overflow-hidden px-8">
+    <div className="absolute w-full h-screen overflow-visible md:overflow-hidden px-8">
       <img
         src={wall}
         alt="wall"
