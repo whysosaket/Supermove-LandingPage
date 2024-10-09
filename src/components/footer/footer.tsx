@@ -5,6 +5,8 @@ import layer from "../../assets/bg2.png";
 import Monkey from "../shared/Monkey";
 import wall from "../../assets/wall3.jpg";
 import FooterItem from "./footer-item";
+import { useContext } from "react";
+import GlobalContext from "../../context/GlobalContext";
 
 const floatVariantsBg2 = {
   initial: { y: 0, x: 0 },
@@ -33,6 +35,7 @@ const floatVariantsBg3 = {
 };
 
 const Footer = () => {
+  const {multiplier, ispc} = useContext(GlobalContext);
   return (
     <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-visible md:overflow-hidden">
          <div className="flex z-10">
@@ -47,7 +50,8 @@ const Footer = () => {
       <motion.img
         src={bg2}
         alt="bg2"
-        className="w-[40rem] absolute -top-[4rem] left-[-15rem] brightness-50"
+        style={{scale: multiplier, width: ispc&&multiplier*640}}
+        className="a w-[40rem] absolute -top-[4rem] left-[-15rem] brightness-50"
         variants={floatVariantsBg2}
         initial="initial"
         animate="animate"
@@ -56,7 +60,8 @@ const Footer = () => {
       <motion.img
         src={bg3}
         alt="bg3"
-        className="w-[40rem] opacity-100 absolute bottom-[0rem] right-[-20rem] brightness-50"
+        style={{scale: multiplier, width: ispc&&multiplier*640}}
+        className="a w-[40rem] opacity-100 absolute bottom-[0rem] right-[-20rem] brightness-50"
         variants={floatVariantsBg3}
         initial="initial"
         animate="animate"

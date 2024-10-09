@@ -2,8 +2,11 @@ import TimelineText from "./timeline-text";
 import wall from "../../assets/wall3.jpg";
 import TimelineImage from "../../assets/timeline.webp";
 import layer from "../../assets/bg2.png";
+import { useContext } from "react";
+import GlobalContext from "../../context/GlobalContext";
 
 const Timeline = () => {
+  const {multiplier, ispc} = useContext(GlobalContext);
   return (
     <div className="absolute top-[300vh] w-full h-screen overflow-hidden px-12">
       <img
@@ -24,7 +27,9 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-12 -ml-[100vw] md:-ml-96">
+        <div
+        style={{marginLeft: ispc&&-multiplier*384}}
+        className="flex justify-center mt-12 -ml-[100vw] md:-ml-96">
           <div className="md:w-5/6 mx-auto flex justify-center">
             <img
               src={TimelineImage}

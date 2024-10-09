@@ -4,6 +4,8 @@ import bg3 from "../assets/abstract/3.png";
 import layer from "../assets/bg.png";
 import wall from "../assets/wall3.jpg";
 import { Vortex } from "./ui/vortex";
+import GlobalContext from "../context/GlobalContext";
+import { useContext } from "react";
 
 const floatVariantsBg2 = {
   initial: { y: 0, x: 0 },
@@ -32,15 +34,18 @@ const floatVariantsBg3 = {
 };
 
 const Background = () => {
+
+  const {multiplier} = useContext(GlobalContext);
+
   return (
     <div className="absolute w-full h-screen overflow-visible md:overflow-hidden">
-      <Vortex
+      {/* <Vortex
         backgroundColor="transparent"
         rangeY={800}
         particleCount={50}
         baseHue={20}
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-0"
-      >
+      > */}
         <img 
           src={wall} 
           alt="wall" 
@@ -49,7 +54,8 @@ const Background = () => {
         <motion.img
           src={bg2}
           alt="bg2"
-          className="w-[40rem] absolute -bottom-[4rem] left-[-15rem] brightness-90"
+          className="a w-[40rem] absolute -bottom-[4rem] left-[-15rem] brightness-90"
+          style={{scale: multiplier}}
           variants={floatVariantsBg2}
           initial="initial"
           animate="animate"
@@ -57,8 +63,9 @@ const Background = () => {
         <motion.img
           src={bg3}
           alt="bg3"
-          className="w-[40rem] absolute top-[0rem] right-[-15rem] brightness-90"
+          className="a w-[40rem] absolute top-[0rem] right-[-15rem] brightness-90"
           variants={floatVariantsBg3}
+          style={{scale: multiplier}}
           initial="initial"
           animate="animate"
         />
@@ -70,7 +77,7 @@ const Background = () => {
           alt="layer"
           className="absolute w-full opacity-20 bottom-[0rem] left-[0rem] -z-5"
         />
-      </Vortex>
+      {/* </Vortex> */}
     </div>
   );
 };

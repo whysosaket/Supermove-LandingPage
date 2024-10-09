@@ -1,6 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import CTA from "./shared/cta";
+import { useContext } from "react";
+import GlobalContext from "../context/GlobalContext";
 const Intro = () => {
+  const {multiplier, ispc} = useContext(GlobalContext);
   return (
     <motion.div
       initial={{ y: 0 }}
@@ -20,7 +23,8 @@ const Intro = () => {
           initial={{ opacity: 0, y: 100, scale: 7.5 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-[4rem] md:text-[8rem] font-outline-2 font-paytone"
+          className="a text-[4rem] font-outline-2 font-paytone"
+          style={{fontSize: ispc&&multiplier*128}}
         >
           supermove
         </motion.h1>
@@ -29,7 +33,8 @@ const Intro = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.9 }}
-            className="text-[4rem] md:text-[8rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            className="a text-[4rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            style={{fontSize: ispc&&multiplier*128, marginTop: ispc&&-multiplier*128-8}}
           >
             supermove
           </motion.h1>
@@ -40,7 +45,8 @@ const Intro = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 1.3 }}
-            className="text-[4rem] md:text-[8rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            className="a text-[4rem] -mt-[4.5rem] md:-mt-[8.5rem] font-outline-2 text-white/0 font-paytone"
+            style={{fontSize: ispc&&multiplier*128, marginTop: ispc&&-multiplier*128-8}}
           >
             supermove
           </motion.h1>

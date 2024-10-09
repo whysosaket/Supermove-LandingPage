@@ -1,8 +1,11 @@
 import halflogo from "../../assets/logo.svg";
 import aptoslogo from "../../assets/aptos-half-logo.svg";
 import Socials from "../about/socials";
+import { useContext } from "react";
+import GlobalContext from "../../context/GlobalContext";
 
 const FooterItem = () => {
+    const {multiplier, ispc} = useContext(GlobalContext);
   return (
     <div className="absolute bottom-0 text-white text-7xl w-full z-50 md:px-10">
         <div className="bg-black/20 p-8 backdrop-blur-sm  rounded-tr-[6rem] rounded-tl-[6rem] w-full h-full md:flex justify-center items-center">
@@ -17,7 +20,9 @@ const FooterItem = () => {
                 </p>
             </div>
             <div className="md:w-1/3 my-auto hidden md:flex justify-end items-center align-middle">
-                <div className="my-auto mt-6">
+                <div
+                style={{marginBottom: ispc&&-multiplier*96}}
+                className="my-auto mt-6">
                 <Socials />
                 </div>
             </div>

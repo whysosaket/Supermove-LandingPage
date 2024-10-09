@@ -27,6 +27,11 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+.my-div, .a{
+  transition: all 0.45s;
+}
+
 ::-webkit-scrollbar {
   width: 0;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
