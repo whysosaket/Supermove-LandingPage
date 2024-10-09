@@ -19,9 +19,6 @@ const GlobalState = (props: any) => {
     }, [dimensions]);
     
 
-
-
-
     return (
         <GlobalContext.Provider value={{multiplier, dimensions,ispc, setDimensions}}>
         {props.children}
