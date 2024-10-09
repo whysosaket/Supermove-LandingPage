@@ -3,7 +3,7 @@
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 
@@ -28,6 +28,7 @@ export const Tabs = ({
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0]);
   const [tabs, setTabs] = useState<Tab[]>(propTabs);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const moveSelectedTabToTop = (idx: number) => {
     const newTabs = [...propTabs];
@@ -35,7 +36,21 @@ export const Tabs = ({
     newTabs.unshift(selectedTab[0]);
     setTabs(newTabs);
     setActive(newTabs[0]);
+    setActiveIndex(idx);
   };
+
+  useEffect(()=>{
+    const interval = setInterval(() => {
+      setHovering(true);
+      setTimeout(() => {
+        moveSelectedTabToTop((activeIndex+1)%tabs.length);
+      }, 600);
+      setTimeout(()=>{
+        setHovering(false);
+      }, 800);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
   const [hovering, setHovering] = useState(false);
 
