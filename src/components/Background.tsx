@@ -3,7 +3,7 @@ import bg2 from "../assets/abstract/2.webp";
 import bg3 from "../assets/abstract/3.webp";
 import layer from "../assets/bg.webp";
 import wall from "../assets/wall3.jpg";
-import { Vortex } from "./ui/vortex";
+import wall2 from "../assets/giphy.webp";
 import GlobalContext from "../context/GlobalContext";
 import { useContext } from "react";
 
@@ -39,17 +39,15 @@ const Background = () => {
 
   return (
     <div className="absolute w-full h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
-      {/* <Vortex
-        backgroundColor="transparent"
-        rangeY={800}
-        particleCount={20}
-        baseHue={20}
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-0"
-      > */}
         <img 
           src={wall} 
           alt="wall" 
           className="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-50" 
+        />
+        <img 
+          src={wall2} 
+          alt="wall2" 
+          className="absolute top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
         />
         <motion.img
           src={bg2}
@@ -77,7 +75,6 @@ const Background = () => {
           alt="layer"
           className="absolute w-full opacity-20 bottom-[0rem] left-[0rem] -z-5"
         />
-      {/* </Vortex> */}
     </div>
   );
 };
