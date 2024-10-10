@@ -1,7 +1,7 @@
 import TimelineText from "./timeline-text";
 import wall from "../../assets/wall3.jpg";
 import TimelineImage from "../../assets/timeline.webp";
-import layer from "../../assets/bg2.png";
+import layer from "../../assets/bg2.webp";
 import { useContext } from "react";
 import GlobalContext from "../../context/GlobalContext";
 

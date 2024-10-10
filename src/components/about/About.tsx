@@ -1,5 +1,5 @@
 import wall from "../../assets/wall3.jpg";
-import layer from "../../assets/bg2.png";
+import layer from "../../assets/bg2.webp";
 import image from "../../assets/space/1_3D.png";
 import AboutUsText from "./AboutUsText";
 import { TabsDemo } from "./about-tabs";

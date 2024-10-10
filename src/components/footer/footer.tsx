@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import bg2 from "../../assets/abstract/1.png";
-import bg3 from "../../assets/abstract/2.png";
-import layer from "../../assets/bg2.png";
+import bg2 from "../../assets/abstract/1.webp";
+import bg3 from "../../assets/abstract/2.webp";
+import layer from "../../assets/bg2.webp";
 import Monkey from "../shared/Monkey";
 import wall from "../../assets/wall3.jpg";
 import FooterItem from "./footer-item";
@@ -37,7 +37,7 @@ const floatVariantsBg3 = {
 const Footer = () => {
   const {multiplier, ispc} = useContext(GlobalContext);
   return (
-    <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
+    <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-y-hidden overflow-x-hidden md:overflow-hidden">
          <div className="flex z-10">
         <FooterItem />
       </div>

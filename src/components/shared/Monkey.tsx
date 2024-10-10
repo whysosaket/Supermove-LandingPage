@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import monkey from "../../assets/file.png";
+import monkey from "../../assets/file.webp";
 import GlobalContext from "../../context/GlobalContext";
 
 const Monkey = () => {

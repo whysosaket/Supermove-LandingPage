@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import bg2 from "../assets/abstract/2.png";
-import bg3 from "../assets/abstract/3.png";
-import layer from "../assets/bg.png";
+import bg2 from "../assets/abstract/2.webp";
+import bg3 from "../assets/abstract/3.webp";
+import layer from "../assets/bg.webp";
 import wall from "../assets/wall3.jpg";
 import { Vortex } from "./ui/vortex";
 import GlobalContext from "../context/GlobalContext";

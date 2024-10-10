@@ -2,7 +2,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useContext } from "react";
 import GlobalContext from "../../context/GlobalContext";
 import wall from "../../assets/wall3.jpg";
-import layer from "../../assets/bg3.png";
+import layer from "../../assets/bg3.webp";
 import image from "../../assets/space/2_3D.png";
 import { ExpandableCardDemo } from "./expandable-card";
 import OurWorkText from "./our-work-text";
