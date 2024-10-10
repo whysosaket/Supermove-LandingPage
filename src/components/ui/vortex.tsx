@@ -3,7 +3,7 @@
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cn } from "../../lib/utils";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
@@ -192,7 +192,7 @@ export const Vortex = (props: VortexProps) => {
     ctx?: CanvasRenderingContext2D
   ) => {
     const { innerWidth, innerHeight } = window;
-
+    ctx;
     canvas.width = innerWidth;
     canvas.height = innerHeight;
 
