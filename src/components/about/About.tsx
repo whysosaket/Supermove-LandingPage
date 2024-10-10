@@ -28,7 +28,7 @@ const About = () => {
   const {multiplier, ispc} = useContext(GlobalContext);
 
   return (
-    <div className="absolute w-full h-screen overflow-visible md:overflow-hidden px-8">
+    <div className="absolute w-full h-screen overflow-y-hidden overflow-x-hidden md:overflow-hidden px-8">
       <img
         src={wall}
         alt="wall"

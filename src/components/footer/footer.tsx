@@ -37,7 +37,7 @@ const floatVariantsBg3 = {
 const Footer = () => {
   const {multiplier, ispc} = useContext(GlobalContext);
   return (
-    <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-visible md:overflow-hidden">
+    <div className="absolute top-[400vh] w-full h-96 md:h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
          <div className="flex z-10">
         <FooterItem />
       </div>

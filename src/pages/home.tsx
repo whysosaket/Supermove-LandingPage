@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import About from "../components/about/About";
 import Background from "../components/Background";
 import Footer from "../components/footer/footer";

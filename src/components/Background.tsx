@@ -38,7 +38,7 @@ const Background = () => {
   const {multiplier} = useContext(GlobalContext);
 
   return (
-    <div className="absolute w-full h-screen overflow-visible md:overflow-hidden">
+    <div className="absolute w-full h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
       {/* <Vortex
         backgroundColor="transparent"
         rangeY={800}
