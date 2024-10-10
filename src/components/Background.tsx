@@ -39,13 +39,13 @@ const Background = () => {
 
   return (
     <div className="absolute w-full h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
-      {/* <Vortex
+      <Vortex
         backgroundColor="transparent"
         rangeY={800}
-        particleCount={50}
+        particleCount={20}
         baseHue={20}
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full relative z-0"
-      > */}
+      >
         <img 
           src={wall} 
           alt="wall" 
@@ -77,7 +77,7 @@ const Background = () => {
           alt="layer"
           className="absolute w-full opacity-20 bottom-[0rem] left-[0rem] -z-5"
         />
-      {/* </Vortex> */}
+      </Vortex>
     </div>
   );
 };
