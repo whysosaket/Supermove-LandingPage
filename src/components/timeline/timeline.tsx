@@ -1,5 +1,6 @@
 import TimelineText from "./timeline-text";
 import wall from "../../assets/wall3.jpg";
+import wall2 from "../../assets/giphy.webp";
 import TimelineImage from "../../assets/timeline.webp";
 import layer from "../../assets/bg2.webp";
 import { useContext } from "react";
@@ -14,6 +15,11 @@ const Timeline = () => {
         alt="wall"
         className="absolute top-0 left-0 w-full h-full object-cover -z-20 brightness-[0.5] opacity-50"
       />
+      <img 
+          src={wall2} 
+          alt="wall2" 
+          className="absolute top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
+        />
 
       <img
         src={layer}

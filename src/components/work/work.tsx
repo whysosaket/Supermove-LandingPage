@@ -2,6 +2,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useContext } from "react";
 import GlobalContext from "../../context/GlobalContext";
 import wall from "../../assets/wall3.jpg";
+import wall2 from "../../assets/giphy.webp";
 import layer from "../../assets/bg3.webp";
 import image from "../../assets/space/2_3D.png";
 import { ExpandableCardDemo } from "./expandable-card";
@@ -33,6 +34,11 @@ const Work = () => {
         alt="wall"
         className="absolute top-0 left-0 w-full h-full object-cover -z-20 brightness-[0.5] opacity-50"
       />
+      <img 
+          src={wall2} 
+          alt="wall2" 
+          className="absolute rotate-180 top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
+        />
       <div className="w-full overflow-hidden select-none">
         <motion.h1
           className="absolute -bottom-10 text-[25rem] font-outline text-white opacity-10 font-paytone whitespace-nowrap"

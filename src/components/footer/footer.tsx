@@ -4,6 +4,7 @@ import bg3 from "../../assets/abstract/2.webp";
 import layer from "../../assets/bg2.webp";
 import Monkey from "../shared/Monkey";
 import wall from "../../assets/wall3.jpg";
+import wall2 from "../../assets/giphy.webp";
 import FooterItem from "./footer-item";
 import { useContext } from "react";
 import GlobalContext from "../../context/GlobalContext";
@@ -46,6 +47,12 @@ const Footer = () => {
         alt="wall"
         className="absolute top-0 left-0 w-full h-full object-cover -z-20 brightness-[0.5] opacity-50"
       />
+
+      <img 
+          src={wall2} 
+          alt="wall2" 
+          className="absolute rotate-90 top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
+        />
 
       <motion.img
         src={bg2}
