@@ -38,7 +38,7 @@ const Background = () => {
   const {multiplier} = useContext(GlobalContext);
 
   return (
-    <div className="absolute w-full h-screen overflow-y-visible overflow-x-hidden md:overflow-hidden">
+    <div className="absolute w-full h-screen overflow-y-hidden overflow-x-hidden md:overflow-hidden">
         <img 
           src={wall} 
           alt="wall" 

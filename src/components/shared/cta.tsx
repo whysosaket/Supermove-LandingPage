@@ -8,10 +8,10 @@ const CTA = () => {
   return (
     <div
     style={{marginTop: ispc&&-multiplier*260}}
-    className="a -mt-96 md:-mt-80 flex flex-col gap-4 items-center justify-center">
+    className="a -mt-80 md:-mt-80 flex flex-col gap-4 items-center justify-center">
     <div
     style={{paddingLeft: ispc&&multiplier*384, paddingRight: ispc&&multiplier*384}}
-    className="md:px-96 flex flex-col gap-4 items-center justify-center">
+    className="md:px-96 flex flex-col gap-4 items-center justify-center px-6">
         <p className="a text-center text-4xl font-semibold"
         style={{fontSize: ispc&&multiplier*36}}
         >Join the Spheron SuperMove Tour</p>

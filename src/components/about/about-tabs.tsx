@@ -70,10 +70,10 @@ const What = (props: {multiplier: number, ispc: any}) => {
 
       {/* Hidden Paragraphs that appear on hover */}
       <div
-      style={{marginTop: -props.multiplier*88}}
+      style={{marginTop: props.multiplier==1?-props.multiplier*200:-props.multiplier*88}}
       className="text-black -mt-[12rem] text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <p
-        style={{fontSize: props.ispc&&props.multiplier*14}}
+        style={{fontSize: props.multiplier==1?props.multiplier*10:props.multiplier*14}}
         className="a mb-4">
           Spheron SuperMove Tour is a 6 month long developer adoption campaign
           being lead by Spheron and Aptos. Spheron SuperMove Tour aims at
