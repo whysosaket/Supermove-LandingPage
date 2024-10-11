@@ -52,7 +52,9 @@ const Home = () => {
       <Background />
       <Intro />
       <About />
-      <Work />
+      <section id="work">
+        <Work />
+      </section>
       <Timeline />
       <Footer />
     </div>

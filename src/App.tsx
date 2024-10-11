@@ -8,11 +8,21 @@ function App() {
 
   const [loading, setLoading] = useState(true);
   useEffect(()=>{
-    setTimeout(()=>{
-      setLoading(false);
-      window.scrollTo(0, 0)
-    },2500)
+    handleLoading();
   }, [])
+
+  const handleLoading = () => {
+    if(localStorage.getItem("visit")){
+      setLoading(false);
+      window.scrollTo(0, 0);
+    }else{
+      setTimeout(()=>{
+        setLoading(false);
+        window.scrollTo(0, 0)
+        localStorage.setItem("visit", "true");
+      },2500)
+    }
+  };
 
   return (
     loading?<>

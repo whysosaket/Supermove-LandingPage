@@ -2,6 +2,8 @@ import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/use-outside-click";    
 
+const link = "https://sphn.notion.site/Spheron-SuperMove-Tour-a0a840cc31e3437b81394281005d6f7b";
+
 export function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
@@ -207,7 +209,7 @@ const cards = [
         title: "University Workshops",
         src: "/work/w1.webp",
         ctaText: "View",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: link,
         content: () => {
           return (
             <p>
@@ -223,7 +225,7 @@ const cards = [
         title: "Hackathons",
         src: "/work/w3.webp",
         ctaText: "View",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: link,
         content: () => {
           return (
             <p>
@@ -238,7 +240,7 @@ const cards = [
         title: "Online Workshops",
         src: "/work/w4.webp",
         ctaText: "View",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: link,
         content: () => {
           return (
             <p>
@@ -253,7 +255,7 @@ const cards = [
         title: "Builders Meet",
         src: "/work/w5.webp",
         ctaText: "View",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: link,
         content: () => {
           return (
             <p>
@@ -268,7 +270,7 @@ const cards = [
         title: "Bounties",
         src: "/work/w6.webp",
         ctaText: "View",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: link,
         content: () => {
           return (
             <p>
