@@ -67,7 +67,7 @@ const About = () => {
               className="hidden md:block border-b-2 border-white/100 w-64"></div>
             </div>
             <TabsDemo />
-            <div className="w-full flex md:block justify-center items-center">
+            <div className="w-full flex md:block justify-center items-center relative md:bottom-8">
               <Socials />
             </div>
           </div>
