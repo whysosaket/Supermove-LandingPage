@@ -42,17 +42,17 @@ const Background = () => {
         <img 
           src={wall} 
           alt="wall" 
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-50" 
+          className="bb absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-[0.5] opacity-50" 
         />
         <img 
           src={wall2} 
           alt="wall2" 
-          className="absolute top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
+          className="bb absolute top-0 left-0 w-full h-full object-cover brightness-[0.5] opacity-30" 
         />
         <motion.img
           src={bg2}
           alt="bg2"
-          className="a w-[40rem] absolute -bottom-[4rem] left-[-15rem] brightness-90"
+          className="a aa w-[40rem] absolute -bottom-[4rem] left-[-15rem] brightness-90"
           style={{scale: multiplier}}
           variants={floatVariantsBg2}
           initial="initial"
@@ -61,7 +61,7 @@ const Background = () => {
         <motion.img
           src={bg3}
           alt="bg3"
-          className="a w-[40rem] absolute top-[0rem] right-[-15rem] brightness-90"
+          className="a aa w-[40rem] absolute top-[0rem] right-[-15rem] brightness-90"
           variants={floatVariantsBg3}
           style={{scale: multiplier}}
           initial="initial"
