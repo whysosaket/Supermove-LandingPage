@@ -1,6 +1,6 @@
 const Loading = () => {
     return (
-      <div className="w-screen h-screen bg-white text-black flex justify-center align-middle z-[100]">
+      <div className="w-screen h-screen bg-black text-white flex justify-center align-middle z-[100]">
         <div className="my-auto text-center flex">
           <div role="status">
             <svg

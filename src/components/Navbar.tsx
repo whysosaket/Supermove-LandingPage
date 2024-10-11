@@ -2,7 +2,7 @@ import Logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <div className="absolute px-8 top-0 flex justify-between z-10 items-center w-full h-16 bg-gray-800/5 backdrop-blur-lg  p-4">
+    <div className="absolute px-8 top-0 flex justify-between z-10 items-center w-full h-16 bg-gray-800/5 backdrop-blur-[2px]  p-4">
       <img src={Logo} alt="logo" className="w-24" />
       <div className="hidden md:flex items-center gap-6 font-semibold">
         <h1>Spheron Network</h1>

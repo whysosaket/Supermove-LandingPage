@@ -13,7 +13,11 @@ function App() {
 
   const handleLoading = () => {
     if(localStorage.getItem("visit")){
-      setLoading(false);
+      setTimeout(()=>{
+        setLoading(false);
+        window.scrollTo(0, 0)
+        localStorage.setItem("visit", "true");
+      },500)
       window.scrollTo(0, 0);
     }else{
       setTimeout(()=>{

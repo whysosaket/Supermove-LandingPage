@@ -56,10 +56,10 @@ export const Tabs = ({
   const {multiplier} = useContext(GlobalContext);
 
   useEffect(()=>{
-    for(let i=0;i<tabs.length;i++){
+    for(let i=tabs.length-1;i>=0;i--){
         moveSelectedTabToTop(i);
     }
-  },[multiplier]);
+  },[multiplier, tabs.length]);
 
   const [hovering, setHovering] = useState(false);
 
