@@ -13,7 +13,7 @@ const GlobalState = (props: any) => {
     });
 
     useEffect(() => {
-        const value = dimensions.width>768?dimensions.width/1440:1;
+        const value = dimensions.width>768?dimensions.width/1440:1.6969;
         setispc(dimensions.width>768);
         setMultiplier(value);
     }, [dimensions]);
